@@ -1,0 +1,7 @@
+{
+    "name": "FinanceApp",
+    "short_name": "FinanceApp",
+    "start_url": "index.html",
+    "display": "standalone",
+    "orientation": "portrait-primary"
+}

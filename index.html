@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" onmouseover="hover()" onmouseout="stophover()">Home</a>
+            <a href="#" class="nav-link" style="display: none;">About</a>
+            <a href="#" class="nav-link" style="display: none;">Contact</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link" style="display: none;">Account</a>
+                <div class="dropdown-menu">
+                    <a href="#">Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <button onclick="collapse()">&#9776;</button>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 7px;">
+        <div class="row">
+            <div class="col-full">
+                <div class="card">
+                    <div class="card-header">Total: $<span class="total">0</span></div>
+                </div>
+            </div>
+            <div class="col-full">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="">
+                            <input type="text" id="newName" placeholder="New transaction name">
+                            <input type="text" id="newVal" placeholder="New transaction">
+                            <button id="add" onclick="addnew()">+</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
